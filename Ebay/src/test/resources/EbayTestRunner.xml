@@ -3,18 +3,22 @@
 
 <suite name ="Ebay Test Script" parallel="false">
 
-    <!-- <parameter name="useCloudEnv" value="false"/>
+     <parameter name="useCloudEnv" value="false"/>
      <parameter name="cloudEnvName" value="browserstack"/>
      <parameter name="os" value="Windows"/>
      <parameter name="os_version" value="10"/>
      <parameter name="browserName" value="Chrome"/>
-     <parameter name="browserVersion" value="84.0"/>-->
+     <parameter name="browserVersion" value="84.0"/>
     <parameter name="url" value="https://www.ebay.com/"></parameter>
 
     <test name = "Ebay Home">
 
         <classes>
-            <!-- <class name="" />-->
+            <!-- <class name="EbayTestHome.AllCatTest" />
+            <class name="EbayTestHome.HomePage" />
+            <class name="EbayTestHome.SearchBar" />
+            <class name="EbayTestHome.ShoppingCart" />-->
+            <class name="BannersTest.smallBussBanner"></class>
         </classes>
 
     </test>

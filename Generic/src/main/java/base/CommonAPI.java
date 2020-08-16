@@ -31,7 +31,7 @@ public class CommonAPI {
     public static WebDriver driver = null;
     @Parameters({"useCloudEnv","cloudEnvName","url","os","os_version","browserName","browserVersion"})
     @BeforeMethod
-    public void setUp(@Optional("false")String useCloudEnv, @Optional("browserstack")String cloudEnvName, @Optional("http://amazon.com")String url,
+    public void setUp(@Optional("false")String useCloudEnv, @Optional("browserstack")String cloudEnvName,@Optional String url,
                       @Optional("OS x")String OS, @Optional("10") String os_version, @Optional("Chrome")String browserName,
                       @Optional("84") String browserVersion)throws IOException {
         if (useCloudEnv.equalsIgnoreCase("true")) {
@@ -39,6 +39,8 @@ public class CommonAPI {
         } else if (useCloudEnv.equalsIgnoreCase("false")){
             getLocalDriver(OS,browserName);
         }
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().pageLoadTimeout(40 , TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().to(url);
         driver.manage().window().maximize();
