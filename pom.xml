@@ -13,6 +13,7 @@
         <module>Generic</module>
         <module>Alibaba</module>
         <module>Ebay</module>
+        <module>Amazon</module>
     </modules>
 
 

@@ -14,10 +14,10 @@
     <test name = "Ebay Home">
 
         <classes>
-            <!-- <class name="EbayTestHome.AllCatTest" />
+             <class name="EbayTestHome.AllCatTest" />
             <class name="EbayTestHome.HomePage" />
             <class name="EbayTestHome.SearchBar" />
-            <class name="EbayTestHome.ShoppingCart" />-->
+            <class name="EbayTestHome.ShoppingCart" />
             <class name="BannersTest.smallBussBanner"></class>
         </classes>
 
