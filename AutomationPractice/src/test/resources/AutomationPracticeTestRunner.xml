@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name ="Alibaba Test Script" parallel="false">
+<suite name ="Automation Practice Test Script" parallel="false">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
@@ -9,12 +9,12 @@
     <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="Chrome"/>
     <parameter name="browserVersion" value="84.0"/>
-    <parameter name="url" value="https://www.alibaba.com/"></parameter>
+    <parameter name="url" value="http://automationpractice.com/index.php"></parameter>
 
-    <test name = "Alibaba Home">
+    <test name = "Automation Practice Home">
 
         <classes>
-           <class name="AlibabaTest.AliHomePage"></class>
+            <class name="hometabs.LandingPage" />
         </classes>
 
     </test>

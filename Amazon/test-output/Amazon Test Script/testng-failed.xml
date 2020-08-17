@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon Test Script]">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="os" value="Windows"/>
+  <parameter name="os_version" value="10"/>
+  <parameter name="browserVersion" value="84.0"/>
+  <parameter name="browserName" value="Chrome"/>
+  <parameter name="cloudEnvName" value="browserstack"/>
+  <parameter name="url" value="https://www.amazon.com/"/>
+  <test thread-count="5" name="Amazon Home(failed)">
+    <classes>
+      <class name="amazonTest.AmazonTest">
+        <methods>
+          <include name="testShopByCategories"/>
+          <include name="testSell"/>
+          <include name="afterEachTestMethod"/>
+          <include name="testGiftCards"/>
+          <include name="extentSetup"/>
+          <include name="startExtent"/>
+          <include name="cleanUp"/>
+          <include name="testCategories"/>
+          <include name="testTodaysDeals"/>
+          <include name="testAddingItemToCart"/>
+          <include name="testVehicleBrand"/>
+          <include name="testZipCode"/>
+          <include name="initElements"/>
+          <include name="testGetHelp"/>
+          <include name="testSearch"/>
+          <include name="generateReport"/>
+          <include name="testDealOfTheDay"/>
+          <include name="setUp"/>
+          <include name="testWholeFoods"/>
+          <include name="testAmazonCart"/>
+        </methods>
+      </class> <!-- amazonTest.AmazonTest -->
+      <class name="search.SearchItems">
+        <methods>
+          <include name="afterEachTestMethod"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+          <include name="setUp"/>
+          <include name="readDataBaseItems"/>
+          <include name="startExtent"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- search.SearchItems -->
+    </classes>
+  </test> <!-- Amazon Home(failed) -->
+</suite> <!-- Failed suite [Amazon Test Script] -->
